@@ -1,0 +1,38 @@
+/* header-style */
+
+.body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.header.container {
+  background-color: $color-header-card;
+}
+
+.header {
+  border-bottom: 1px solid $color-bottom-line;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: $font-bold;
+  font-size: 26px;
+  line-height: 1.2;
+
+  margin-right: 93px;
+
+  color: $color-logo;
+  text-decoration: none;
+  width: 145px;
+  height: 31px;
+}
+
+.logo__header {
+  color: $color-blue;
+}
+
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
