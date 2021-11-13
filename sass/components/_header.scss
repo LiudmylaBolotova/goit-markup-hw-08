@@ -13,11 +13,11 @@
   border-bottom: 1px solid $color-bottom-line;
 
   @media screen and (max-width: 480px), (min-width: 480px), (max-width: 768px) {
-    height: 60px;
+    // height: 60px;
   }
 
   @media screen and (min-width: 768px), (max-width: 768px) {
-  height: 80px;  
+  // height: 80px;  
   }
 }
   

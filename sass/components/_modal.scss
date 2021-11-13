@@ -1,43 +1,43 @@
 /* modal */
-.modal {
-  display: flex;
-  position: absolute;
-  padding: 40px;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  opacity: 1;
+// .modal {
+//   display: flex;
+//   position: absolute;
+//   padding: 40px;
+//   z-index: 2;
+//   top: 50%;
+//   left: 50%;
+//   opacity: 1;
 
-  min-width: 528px;
-  min-height: 581px;
-  background-color: $color-modal;
-  transform: translate(-50%, -50%) scale(1) rotateZ(1turn);
-  transition: transform 350ms $timing-fanction, opacity 350ms $timing-fanction;
-}
+//   min-width: 528px;
+//   min-height: 581px;
+//   background-color: $color-modal;
+//   transform: translate(-50%, -50%) scale(1) rotateZ(1turn);
+//   transition: transform 350ms $timing-fanction, opacity 350ms $timing-fanction;
+// }
 
-.modal__btn {
-  display: flex;
-  align-items: center;
-  position: absolute;
+// .modal__btn {
+//   display: flex;
+//   align-items: center;
+//   position: absolute;
 
-  width: 30px;
-  height: 30px;
-  top: 8px;
-  right: 8px;
+//   width: 30px;
+//   height: 30px;
+//   top: 8px;
+//   right: 8px;
 
-  background-color: $color-modal;
-  border-radius: 50%;
-  border: 1px solid $color-shadow-one;
+//   background-color: $color-modal;
+//   border-radius: 50%;
+//   border: 1px solid $color-shadow-one;
 
-  transition: border-color 250ms var(--timing-fanction),
-    fill 250ms var(--timing-fanction);
-  &:hover,
-  &:focus {
-    border-color: $color-blue;
-    fill: $color-blue;
-  }
-}
+//   transition: border-color 250ms var(--timing-fanction),
+//     fill 250ms var(--timing-fanction);
+//   &:hover,
+//   &:focus {
+//     border-color: $color-blue;
+//     fill: $color-blue;
+//   }
+// }
 
-.modal__icon {
-  display: flex;
-}
+// .modal__icon {
+//   display: flex;
+// }
