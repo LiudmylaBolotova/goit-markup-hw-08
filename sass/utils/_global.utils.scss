@@ -53,5 +53,9 @@ img {
    padding-top: 94px;
   padding-bottom: 94px;
   text-align: center; 
+
+  @media screen and (max-width: 480px), (min-width: 480px), (max-width: 768px) {
+    position: relative;
+  }
   }
 }
