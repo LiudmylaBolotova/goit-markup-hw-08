@@ -11,7 +11,16 @@
 
 .header {
   border-bottom: 1px solid $color-bottom-line;
+
+  @media screen and (max-width: 480px), (min-width: 480px), (max-width: 768px) {
+    height: 60px;
+  }
+
+  @media screen and (min-width: 768px), (max-width: 768px) {
+  height: 80px;  
+  }
 }
+  
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -25,33 +34,51 @@
   text-decoration: none;
   width: 145px;
   height: 31px;
+
+  @media screen and (max-width: 480px), (min-width: 480px), (max-width: 1200px) {
+    margin-right: 0;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+
+    font-size: 24px;
+line-height: 1.16;
+  }
 }
 
 .logo__header {
   color: $color-blue;
 }
 
-.navigation {
-@media screen and (min-width: 768px) {
-  display: flex;
-  align-items: center;
-}
-}
-
-.header__mobile {
-  display: none;
-  
+.header__mobile { 
+  @media screen and (max-width: 768px) {
+     display: none;
+  }
 }
 
 .header__button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
+  position: absolute;
+ display: block;
+
+  top: 10px;
+left: 276px;
+  
+  transform: translate(-50%);
+  
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  
 }
 
-.header__button .header__close{
+.section {
+  position: relative;
+}
+
+.header__button .header__close {
   display: none;
 }
 
@@ -63,58 +90,31 @@
   display: none;
 }
 
+.header__container {
+ position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: none;
+  width: 100%;
+
+  text-align: left;
+  padding-top: 48px;
+  padding-left: 40px;
+background-color: $color-header-card;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.header__button {
+  &:hover {
+    fill: $color-blue;
+  }
+  &:focus {
+    fill: $color-blue;
+  }
+}
 
 
-
-
-// .header__close {
-//   &hover {
-//     fill: $color-blue;
-//   }
-//   &focus {
-//     fill: $color-blue;
-//   }
-// }
-
-//   display: flex;
-//   align-items: center;
-// }
-
-/* header-style */
-
-// .body {
-//   font-family: Roboto, sans-serif;
-//   letter-spacing: 0.03em;
-// }
-
-// .header.container {
-//   background-color: $color-header-card;
-// }
-
-// .header {
-//   border-bottom: 1px solid $color-bottom-line;
-// }
-
-// .logo {
-//   font-family: Raleway, sans-serif;
-//   font-weight: $font-bold;
-//   font-size: 26px;
-//   line-height: 1.2;
-
-//   margin-right: 93px;
-
-//   color: $color-logo;
-//   text-decoration: none;
-//   width: 145px;
-//   height: 31px;
-// }
-
-// .logo__header {
-//   color: $color-blue;
-// }
-
-
-// .navigation {
-//   display: flex;
-//   align-items: center;
-// }
