@@ -44,8 +44,11 @@ img {
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
-}
 
+  @media screen and (max-width: 480px), (min-width: 480px), (max-width: 768px) {
+    position: relative;
+}
+}
 
 
 .section {
@@ -54,8 +57,6 @@ img {
   padding-bottom: 94px;
   text-align: center; 
 
-  @media screen and (max-width: 480px), (min-width: 480px), (max-width: 768px) {
-    position: relative;
   }
   }
-}
+
