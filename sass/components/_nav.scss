@@ -1,26 +1,25 @@
 /* nav */
 .navigation {
-@media screen and (max-width: 480px), (min-width: 480px) {
-  display: none;
-}
+  @media screen and (max-width: 480px), (min-width: 480px) {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
 }
 
-.navigation-list { 
+.navigation-list {
   display: flex;
-align-items: flex-start;
+  align-items: flex-start;
   @media screen and (min-width: 480px) {
-   margin-right: 84px; 
+    margin-right: 84px;
   }
 
-  @media screen and (min-width: 1200px){
-   margin-right: 305px; 
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
   }
-
-  }
+}
 
 // mobile-style
 .menu-container__list {
@@ -31,32 +30,41 @@ align-items: flex-start;
   display: block;
   text-decoration: none;
   font-weight: $font-middle;
-font-size: 40px;
-line-height: 1.17;
-letter-spacing: 0.02em;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
-color: $color-title;
+  color: $color-title;
 
-&:hover,
-&:focus {
-  color: $color-blue;
-}
-}
-
-.header__item {
-  text-decoration: none;
-  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $color-blue;
+  }
 }
 
 .menu-container__item:not(:last-child) {
- margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .menu-container__mail:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.header__link {
+.menu-container__tel {
+  text-decoration: none;
+  font-weight: $font-middle;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $color-blue;
+}
+
+.menu-container__mail {
+  text-decoration: none;
+  color: $color-text;
+}
+
+.menu-container__social {
   font-weight: $font-middle;
   font-size: 18px;
   line-height: 1.22;
@@ -67,27 +75,33 @@ color: $color-title;
   color: $color-blue;
 }
 
-.header__list {
+.menu-container__page {
   margin-top: 64px;
+  display: flex;
 }
 
-.header__item:not(:last-child):after {
-  content: "";
+.menu-container__paragraph {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-container__paragraph:not(:last-child):after {
+  content: '';
   width: 22px;
-color: $color-title;
+  color: $color-title;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
-//   transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
-
 
 /* nav */
 .navigation-list,
 .navigation-auth {
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
-  align-items: baseline;
+    align-items: baseline;
   }
 }
 
@@ -100,12 +114,12 @@ color: $color-title;
 }
 
 .header .navigation-list__link {
-@media screen and (min-width: 1200px) {
-  display: flex;
-  align-items: center;
-padding-top: 26px;
-padding-bottom: 26px;
-}
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 
   color: $color-title;
   font-weight: $font-middle;
@@ -139,12 +153,12 @@ padding-bottom: 26px;
     transition: opasity 250ms $timing-fanction;
 
     @media screen and (min-width: 768px) {
-bottom: -44px;
-  }
+      bottom: -44px;
+    }
 
-  @media screen and (min-width: 1200px) {
-    bottom: -15px;
-  }
+    @media screen and (min-width: 1200px) {
+      bottom: -15px;
+    }
   }
 }
 
@@ -164,13 +178,12 @@ bottom: -44px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
 }
 
 .navigation-auth {
-@media screen and (min-width: 1200px) {
-  margin-left: auto;
-}
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .navigation-auth__smartphone {
@@ -192,122 +205,18 @@ bottom: -44px;
 }
 
 .navigation-auth__mail {
-@media screen and (min-width: 768px) {
-  margin-bottom: 10px;
- }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 
- @media screen and (min-width: 1200px) {
-  margin-right: 30px; 
- }
-}
-
-
-.navigation-list__item {
-  @media screen and (min-width: 768px), (max-width: 768px) {
-   display: flex;
-   justify-content: space-between;
-  
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
   }
 }
 
-
-
-
-
-/* nav */
-// .navigation-list,
-// .navigation-auth {
-//   display: flex;
-//   align-items: baseline;
-// }
-
-// .navigation-list .navigation-list__item:not(:last-child) {
-//   margin-right: 50px;
-// }
-
-// .header .navigation-list__link {
-//   display: flex;
-//   align-items: center;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-
-//   color: $color-title;
-//   font-weight: $font-middle;
-//   font-size: $font-size-min;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   text-decoration: none;
-// }
-
-// .navigation-list__link {
-//   transition: color 250ms $timing-fanction, fill 250ms $timing-fanction;
-// }
-
-// .navigation-list__menu {
-//   display: block;
-//   height: 4px;
-//   position: relative;
-
-//   &::after {
-//     content: '';
-//     display: block;
-//     width: 0;
-//     height: 4px;
-//     border-radius: 2px;
-//     background-color: $color-blue;
-
-//     position: absolute;
-//     left: 0;
-//     bottom: -10px;
-//     opacity: 0;
-//     transition: opasity 250ms $timing-fanction;
-//   }
-// }
-
-// .navigation-list__menu.current::after {
-//   opacity: 1;
-//   width: 100%;
-// }
-
-// .navigation-list .navigation-list__link.current {
-//   color: $color-blue;
-// }
-
-// .navigation-auth .navigation-list__link {
-//   color: $color-text;
-//   font-weight: $font-middle;
-//   font-size: $font-size-min;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   text-decoration: none;
-// }
-
-// .navigation-auth {
-//   margin-left: auto;
-// }
-
-// .navigation-auth__smartphone {
-//   margin-right: 10px;
-//   fill: currentColor;
-// }
-
-// .navigation-list__link {
-//   &:hover,
-//   &:focus {
-//     fill: $color-blue;
-//     color: $color-blue;
-//   }
-// }
-
-// .navigation-auth__envelope {
-//   margin-right: 10px;
-//   fill: currentColor;
-// }
-
-// .navigation-auth__mail {
-//   margin-right: 30px;
-// }
-
-// .navigation-auth .navigation-list__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+.navigation-list__item {
+  @media screen and (min-width: 768px), (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -50,10 +50,8 @@
   color: $color-blue;
 }
 
-
-
 .js-close-menu {
- display: block;
+  display: block;
   padding: 0;
   border: none;
   cursor: pointer;
@@ -61,7 +59,7 @@
 
   @media screen and (min-width: 768px) {
     display: none;
-  } 
+  }
 }
 
 .js-open-menu {
@@ -73,7 +71,7 @@
 
   @media screen and (min-width: 768px) {
     display: none;
-  } 
+  }
 }
 
 .js-close-menu {
@@ -86,7 +84,7 @@
   &:hover,
   &:focus {
     fill: $color-blue;
-  } 
+  }
 }
 
 .header__container {
@@ -109,23 +107,22 @@
 
   background-color: $color-header-card;
 
-padding-top: 48px;
-padding-bottom: 48px;
-padding-right: 40px;
-padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-right: 40px;
+  padding-left: 40px;
 
   z-index: 3;
-  
+
   transform: translateX(-100%);
   transition: transform 350ms $timing-fanction;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
   display: flex;
   transform: translateX(0);
-}
-
-.navigator__menu {
-  display: flex;
-  flex-direction: column;
 }
