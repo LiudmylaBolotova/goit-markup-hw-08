@@ -6,7 +6,7 @@
   background-color: $color-hero;
 
   @media screen and (max-width: 767px) {
-     display: block; 
+    display: block;
   }
 }
 
@@ -18,17 +18,26 @@
 
 .footer__section {
   display: flex;
-  align-items: baseline;
 
   @media screen and (max-width: 767px) {
-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
 
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
   }
 }
 
 .footer__logo--altered {
-   color: $color-blue; 
-  }
+  color: $color-blue;
+}
 
 .footer__logo {
   font-family: Raleway, sans-serif;
@@ -36,33 +45,41 @@ flex-direction: column;
   font-size: 26px;
   line-height: 1.2;
 
-//   margin-right: 93px;
-
   color: $color-header-card;
   text-decoration: none;
   width: 145px;
   height: 31px;
 
-  @media screen and (max-widt: 1200) {
-font-size: 24px;
-line-height: 1.16;
-width: 154px;
-height: 28px;
+  @media screen and (max-widt: 1999px) {
+    font-size: 24px;
+    line-height: 1.16;
+    width: 154px;
+    height: 28px;
+    margin-right: 0;
+  }
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
   }
 }
 
 .footer__contact {
   display: block;
   width: 231px;
-//   text-align: left;
-//   float: left;
 
-@media screen and (max-width: 767px) {
-margin-right: auto;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-}
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-left: 0;
+  }
 }
 
 .footer__company {
@@ -80,9 +97,8 @@ margin-right: auto;
   height: 31px;
 
   @media screen and (max-width: 1200px) {
-   margin-left: auto;
-   margin-right: auto;
-
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -115,18 +131,14 @@ margin-right: auto;
     margin-bottom: 6px;
   }
 
-  @media screen and (max-width: 1200px) {
-      text-align: center;
+  @media screen and (max-width: 1999px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
-
-
-
-
-
-
-
-
 
 /* invitation */
 .invitation__title {
@@ -142,23 +154,35 @@ margin-right: auto;
   color: $color-header-card;
 
   @media screen and (max-width: 767px) {
-      margin-top: 60px;
-  text-align: center;
+    margin-top: 60px;
+    text-align: center;
   }
 }
 
 .invitation {
-  margin-left: 70px;
- @media screen and (max-width: 767px) {
-display: block;
-margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: 137px;
+    margin-right: 137px;
+  }
+
+  @media screen and (min-width: 768px), (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 165px;
+    padding-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 
 .action {
   display: flex;
   @media screen and (max-width: 767px) {
-justify-content: space-between;
+    justify-content: space-between;
   }
 }
 
@@ -194,19 +218,24 @@ justify-content: space-between;
 // /* subscription */
 .form {
   display: block;
- @media screen and (min-width: 1200px) {
-     margin-left: 93px;  
+  @media screen and (max-width: 767px) {
+    padding: 60px 15px;
+    width: 480px;
   }
 
-//   @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: auto;
+  }
 
-
-//   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-top: 0;
+  }
 }
 
 .form__title {
-    @media screen and (max-width: 767px) {
- display: block;
+  display: block;
   font-weight: $font-bold;
   font-size: 14px;
   line-height: 1.14;
@@ -215,16 +244,33 @@ justify-content: space-between;
   margin-top: 0;
   margin-bottom: 20px;
 
-  color: $color-header-card;   
-   margin-top: 60px;
-margin-left: auto;
-margin-right: auto;
-} }
+  color: $color-header-card;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
+}
 
 .subscription {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .subscription__email {
@@ -245,6 +291,26 @@ margin-right: auto;
 
     color: $color-transparent;
   }
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  @media screen and (max-width: 1999px) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .button {
@@ -259,6 +325,9 @@ margin-right: auto;
   background-color: $color-blue;
   border-radius: 4px;
   box-shadow: 0px 4px 4px $color-shadow-four;
+
+  @media screen and (max-width: 767px) {
+  }
 }
 
 .button__text {
@@ -279,4 +348,3 @@ margin-right: auto;
   padding-right: 8px;
   background-origin: border-box;
 }
-
