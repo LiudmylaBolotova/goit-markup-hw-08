@@ -2,7 +2,7 @@
 .benefits {
   padding-top: 94px;
   @media screen and (max-width: 1200px) {
-      padding-top: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -11,35 +11,35 @@
   padding: 0;
 
   @media screen and (max-width: 767px) {
-      display: block;
+    display: block;
   }
 
   @media screen and (min-width: 768px), (max-width: 1200px) {
-    display: flex; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-left: 0;
   }
 }
 
 .benefits__item {
-    @media screen and (max-width: 768px) {
-      margin-bottom: 30px; 
-      &:last-child {
-        margin-bottom: 60px;
-      }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 60px;
     }
+  }
 }
 
 .benefits__item {
- @media screen and (min-width: 1200px) {
-  display: block;
-  flex-basis: calc((100% - 90px) / 4);
-  text-align: left;
-  &:not(:last-child) {
-    margin-right: 30px;
-  } 
- }  
+  @media screen and (min-width: 1200px) {
+    display: block;
+    flex-basis: calc((100% - 90px) / 4);
+    text-align: left;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .benefits__title {
@@ -69,15 +69,15 @@
 }
 
 .benefits__item {
- @media screen and (min-width: 768px) and (max-width: 1200px) {
-   display: block;
- flex-basis: calc((100% - 60px) / 2);
-  text-align: left;
-  &:nth-child(2n + 1) {
-   margin-right: 30px; 
-  }
-  &:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    flex-basis: calc((100% - 60px) / 2);
+    text-align: left;
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:not(:last-child) {
       padding-bottom: 30px;
+    }
   }
- } 
 }
