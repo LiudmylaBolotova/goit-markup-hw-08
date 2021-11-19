@@ -96,8 +96,5 @@ fil<path d="M31.992 32h0.008v-11.738c0-5.741-1.235-10.163-7.947-10.163-3.227 0-5
 <symbol id="icon-menu_mobile" viewBox="0 0 32 32">
 <path d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path>
 </symbol>
-<symbol id="icon-Line" viewBox="0 0 1 32">
-<path fill="#212121" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M0.727 0v32"></path>
-</symbol>
 </defs>
 </svg>
