@@ -1,5 +1,5 @@
 /* work */
- .section__title {
+.section__title {
   font-weight: $font-bold;
   font-size: 36px;
   line-height: 1.16;
@@ -43,10 +43,10 @@
   text-transform: uppercase;
 
   color: $color-header-card;
-}   
+}
 
 @media screen and (max-width: 1200px) {
-    .section__works {
-        display: none;
-    }
+  .section__works {
+    display: none;
+  }
 }

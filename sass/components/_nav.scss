@@ -1,13 +1,11 @@
 /* nav */
 .navigation {
-
   @media screen and (max-width: 480px), (min-width: 480px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-
   }
 }
 
@@ -44,12 +42,16 @@
   }
 }
 
-.menu-container__item:not(:last-child) {
-  margin-bottom: 32px;
+.menu-container__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
-.menu-container__mail:not(:last-child) {
-  margin-bottom: 32px;
+.menu-container__mail {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .menu-container__tel {
@@ -79,7 +81,6 @@
 
 .menu-container__page {
   margin-top: 64px;
-
 }
 
 .menu-container__paragraph {
@@ -94,7 +95,7 @@
   width: 22px;
   color: $color-title;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $color-form;
   transform: rotate(90deg);
 }
 
@@ -142,7 +143,7 @@
 
   &::after {
     content: '';
-    display: block;
+
     width: 0;
     height: 4px;
     border-radius: 2px;
@@ -150,16 +151,15 @@
 
     position: absolute;
     left: 0;
-    bottom: -10px;
     opacity: 0;
     transition: opasity 250ms $timing-fanction;
 
     @media screen and (min-width: 768px) {
-      bottom: -44px;
+      bottom: -45px;
     }
 
     @media screen and (min-width: 1200px) {
-      bottom: -15px;
+      bottom: -16px;
     }
   }
 }
