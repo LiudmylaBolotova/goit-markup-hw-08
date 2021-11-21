@@ -22,8 +22,14 @@
 }
 
 // mobile-style
+.menu-container__set {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 .menu-container__list {
-  padding-bottom: 302px;
   height: 100%;
 }
 

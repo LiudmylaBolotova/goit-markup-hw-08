@@ -273,8 +273,21 @@ img {
   }
 }
 
+.menu-container__set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
 .menu-container__list {
-  padding-bottom: 302px;
   height: 100%;
 }
 
@@ -1281,7 +1294,7 @@ img {
   .form {
     width: 450px;
     margin: auto;
-    padding-top: 60px;
+    margin-top: 60px;
   }
 }
 
@@ -1473,7 +1486,6 @@ img {
   .backdrop {
     background-color: rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
-    padding: 93px 15px 94px;
   }
 }
 
@@ -1952,7 +1964,7 @@ img {
 }
 
 .projects__text--padding {
-  padding-bottom: 37px;
+  padding-bottom: 36px;
 }
 
 /* font-style */
