@@ -3,7 +3,6 @@
 .body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-
 }
 
 .header.container {
@@ -117,10 +116,6 @@
 
   transform: translateX(-100%);
   transition: transform 350ms $timing-fanction;
-
-  @media screen and (max-width: 480px) {
-    width: 480px;
-  }
 
   @media screen and (min-width: 768px) {
     display: none;
